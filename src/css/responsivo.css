@@ -66,6 +66,7 @@ a:hover {
  main {
     margin: auto;
     display: flex;
+    flex-direction: column;
     max-height: 500px;
 }
 
@@ -83,14 +84,24 @@ article p {
 }
 
 .bola {
-    width: 900px;
-    height: 900px;
-    border-radius: 50% ;
-    margin: 0;
-    display: flex;
-    position: absolute;
-    justify-content: center;
+    display: none  ;
 
+}
+
+.bola-mobile {
+    margin: auto;
+    border-radius: 100% 100% 0 0;
+    background-color: #006341;
+    text-align: center;
+    padding-bottom: 120px;
+    bottom: 20px;
+
+}
+
+.bola-mobile img {
+    width: 200px;
+    top: 5px;
+    position: relative;
 }
 
 section img {
@@ -103,16 +114,36 @@ section img {
 }
 
 .social {
+    background-color: #006341;
+    flex-direction: column;
     margin-right: 0;
     font-size: 32px;
     margin-left: 6%;
     margin-top: 5%;
+    max-width: 50px;
+    height: 140px;
+    padding-right: 10px ;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px 0 0 10px;
+    position: fixed;
+    right: 1px;
+    top: 35%;
+}
+
+.social a {
+    text-align: center;
+    padding: 0;
+
+}
+
+.social a i{
+    margin-top: 10px
 }
 
 main {
-    margin-left: 7%;
-    flex-direction: column;
-    max-height: 500px;
+
 }
 
 button {
